@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Web 115 Final Project </title>
+	<style>
+		body
+		{
+			font-size: 14pt;
+			font-family: verdana;
+		}
+		table
+		{
+			width: 100%;
+		}
+		td
+		{
+			width: 50%;
+			padding: 4px;
+		}
+		.resume
+		{
+			width: 60%;
+		}
+		.head1
+		{
+			color: black;
+			font-family: Tahoma;
+		}
+		.head2
+		{
+			color: black;
+			font-family: Garamond;
+			font-style: italic;
+		}
+		input[type="text"], input[type="date"], input[type="email"]
+		{
+			padding: 4px;
+			margin-top: 4px;
+			width: 80%;
+		}
+	</style>
+</head>
+<body>
+	<script src="resume.js"></script>
+	<p id="p1"</p>
+	<script>
+		courseHeader();
+	</script>
+	<hr style=width:60%; text-align: center;">
+<center>
+	<h3>Build Your Resume</h3>
+	
+	<div class="resume">
+		<table border="1" cellspacing="5">
+		
+			<tr>
+				<td>Full Name</td>
+				<td>
+				<input type="text" name="fullName" id="fullName" placeholder="Enter Your Full Name"></td>
+			</tr>
+			
+			<tr>
+				<td>Full Address</td>
+				<td>
+				<input type="text" name="address" id="address" placeholder="Enter Your Full Address"></td>
+			</tr>
+			
+			<tr>
+				<td>Phone Number</td>
+				<td>
+				<input type="text" name="phone" id="phone" placeholder="Enter your Phone Number"></td>
+			</tr>
+			
+			<tr>
+				<td>Email</td>
+				<td>
+				<input type="text" name="email" id="email" placeholder="Enter your Email Address"></td>
+			</tr>
+			
+			<tr>
+				<td>Personal Information</td>
+				<td>
+				<textarea rows="4" cols="50" id="personalInfo" placeholder="Enter Your personal Information"></textarea></td>
+
+			</tr>
+			
+			<tr>
+				<td>Career Objective</td>
+				<td>
+				<textarea rows="4" cols="50" id="careerObj" placeholder="Enter Your Career Objective"></textarea></td>
+			</tr>
+  
+			<tr>
+				<td>Education</td>
+				<td>
+				<textarea rows="4" cols="50" id="education" placeholder="Enter Your Education"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">Most Recent Experience</td>
+			</tr>
+			
+			<tr>
+				<td>Joining Date :<input type="date" id="joiningDate"></td>
+				<td>Resignation Date :<input type="date" id="resignDate"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+				<textarea rows="4" cols="50" id="details" placeholder="Enter Your Experience details"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">Prior Experience Details 1</td>
+			</tr>	
+			
+			<tr>
+				<td>Joining Date :<input type="date" id="joiningDate1"></td>
+				<td>Resignation Date :<input type="date" id="resignDate1"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+				<textarea rows="4" cols="50" id="details1" placeholder="Enter Your Experience details"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">Prior Experience Details 2</td>
+			</tr>
+			
+			<tr>
+				<td>Joining Date :<input type="date" id="joiningDate2"></td>
+				<td>Resignation Date :<input type="date" id="resignDate2"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+				<textarea rows="4" cols="50" id="details2" placeholder="Enter Your Experience details"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">Prior Experience Details 3</td>
+			</tr>
+			
+			<tr>
+				<td>Joining Date :<input type="date" id="joiningDate3"></td>
+				<td>Resignation Date :<input type="date" id="resignDate3"></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+				<textarea rows="4" cols="50" id="details3" placeholder="Enter Your Experience details"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td>Business Reference</td>
+				<td>
+				<textarea rows="4" cols="50" id="business" placeholder="Enter Your Business Reference"></textarea></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<input type="submit" value="Create Resume" onclick="generateResume()" id="resumeButton" ></td>
+			</tr>
+			
+		</table>
+	</div>
+</center>
+</body>
+</html>
